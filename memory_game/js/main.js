@@ -25,7 +25,7 @@ var cardsInPlay = [];
 
 var createBoard = function () {
 	for (var i = 0; i < cards.length; i++ ) {
-		// cards[i];
+		
 		var cardElement = document.createElement("img");
 
 		cardElement.setAttribute( "src", "js/images/back.png");
@@ -71,6 +71,10 @@ var flipCard = function () {
 		checkForMatch();
 		
 	}
+}
+
+var restart = function () {
+	location.reload();
 }
 
 createBoard();
